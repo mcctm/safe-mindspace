@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Home | Safe Mindspace</title>
+<meta charset="UTF-8">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="main.css">
+<link rel="stylesheet" href="animate.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<style>
+body,h1,h2,h3,h4,h5, p, a {font-family: "Raleway", sans-serif}
+
+div.auto{-webkit-hyphens: manual;-ms-hyphens: manual;hyphens: manual;}
+
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<header>
+  <nav role='navigation'>
+    <ul>
+      <li><a class="navbar" href="#">Home</a></li>
+      <li><a class="navbar" href="info.html">Information</a></li>
+      <li id="heart-trigger" class="heart heart-trigger"><span class="fa fa-heart"></span></li>
+      <li><a class="navbar" href="activities.html">Activities</a></li>
+      <li><a class="navbar" href="tools.html">Toolbox</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- Tagline -->
+<div class="hv-green hv-container hv-center" style="padding:200px 50px">
+	<img src="logo2.svg"data-aos="fade-in" style="width:108px;vertical-align:middle;padding-top:40px;padding-bottom:20px" alt="Safe Mindspace logo"> 
+  <h1 class="hv-jumbo" data-aos="fade-in" style="margin:auto" data-aos-delay="50"><b>Safe Mind­space</b></h1>
+  <p class="hv-xxlarge" data-aos="fade-in" data-aos-delay="200">Destress and unwind.</p>
+</div>
+
+<!-- Information -->
+<div class="hv-row-padding hv-padding-64 hv-container hv-white">
+  <div class="hv-content" style="padding-left: 25px;padding-right: 25px;">
+  
+    <div class="hv-third hv-padding-48" style="padding-left: 50px;padding-right: 50px;text-align:center">
+      <h1 class="hv-text-purple" data-aos="fade-in" data-aos-delay="50"><b>Information</b></h1>
+      <p class="hv-text-black" data-aos="fade-in" data-aos-delay="100">We know it's hard being a student, especially in remote learning. Learn healthy coping mechanisms for when you feel stressed from schoolwork, extracurriculars, or tests.</p>
+      <img src="info.svg" data-aos="fade-in" data-aos-delay="200" style="width:100%;vertical-align:middle;padding-top:40px" alt="Person sitting on couch">
+    </div>
+	
+	<div class="hv-third hv-padding-48" style="padding-left: 50px;padding-right: 50px;text-align:center">
+      <h1 class="hv-text-purple" data-aos="fade-in" data-aos-delay="50"><b>Activities</b></h1>
+      <p class="hv-text-black" data-aos="fade-in" data-aos-delay="100">View our list of 16 destressing, calming activities, and find one that fits you - or
+	  maybe come up with your own, mindful activity. Keep track with our priority to-do list.</p>
+      <img src="write.svg" data-aos="fade-in" data-aos-delay="200" style="width:100%;vertical-align:middle;padding-top:40px" alt="Person chatting on phone">
+    </div>
+	
+	<div class="hv-third hv-padding-48" style="padding-left: 50px;padding-right: 50px;text-align:center">
+      <h1 class="hv-text-purple" data-aos="fade-in" data-aos-delay="50"><b>Meditate</b></h1>
+      <p class="hv-text-black" data-aos="fade-in" data-aos-delay="100">Use our simple-to-use meditation tool to regulate your breathing and calm yourself
+	  during meditation. If you want, you can play our music to set the mood, or use your own!</p>
+      <img src="pilates.svg" data-aos="fade-in" data-aos-delay="200" style="width:100%;vertical-align:middle;padding-top:40px" alt="Person meditating">
+    </div>
+	
+  </div>
+</div>
+
+<div class="hv-row-padding hv-padding-64 hv-container hv-center hv-green">
+<p class="hv-xlarge" style="padding-left: 70px;padding-right: 70px">This resource was created for students by students in order to help people around the world learn to deal with their schoolwork-induced stress
+and unhappiness. School is stressful, but you can improve your mindset and stay strong with the help of friends, family, and activities that you enjoy.</p>
+</div>
+
+
+<!-- initiate aos -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init({once:true, duration:"600"});
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$("#heart-trigger").click(function () {
+  $("li").toggleClass("visible");
+});
+</script>
+
+
+</body>
+</html>
+

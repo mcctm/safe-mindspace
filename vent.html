@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+	<title>Vent & Let Go | Safe Mindspace</title>
+</head>
+<style>
+	body,
+	h1,
+	h2,
+	h3,
+	h4,
+	h5 {
+		font-family: "Raleway", sans-serif
+	}
+</style>
+
+<body>
+
+	<!-- Navbar -->
+	<header>
+		<nav role='navigation'>
+			<ul>
+				<li><a class="navbar" href="index.html">Home</a></li>
+				<li><a class="navbar" href="info.html">Information</a></li>
+				<li id="heart-trigger" class="heart heart-trigger"><span class="fa fa-heart"></span></li>
+				<li><a class="navbar" href="activities.html">Activities</a></li>
+				<li><a class="navbar" href="tools.html">Toolbox</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<<!-- Tagline -->
+		<div class="hv-light-purple hv-container hv-center" style="padding:120px 50px">
+			<h1 class="hv-xxxlarge" data-aos="fade-in" style="margin:auto" data-aos-delay="50"><b>Vent & Let Go</b></h1>
+			<p class="hv-xlarge" data-aos="fade-in" data-aos-delay="200">Type out all your frustrations here.</p>
+		</div>
+
+		<section class="hv-row-padding hv-padding-64 hv-container hv-purple"
+			style="padding-left:50px;padding-right:50px">
+
+			<textarea class="textbox" data-aos="fade-in" data-aos-delay="200" id="text1" value=""
+				placeholder="Vent it out"></textarea>
+
+			<br>
+			<br>
+			<br>
+
+			<button class="accept-btn" data-aos="fade-in" data-aos-delay="200" onclick="submit()" id="button1">Accept
+				it</button>
+
+			<br>
+			<br>
+
+			<div class="submitted-text">
+				<p id="submitted1"></p>
+			</div>
+
+			<br>
+			<br>
+
+			<button class="trash2-btn" data-aos="fade-in" data-aos-delay="200" onclick="intoVoid()" id="button2">Let it
+				go</button>
+			<br>
+
+		</section>
+
+		<script>
+
+			function submit() {
+				var x = document.getElementById("text1").value;
+				document.getElementById("submitted1").innerHTML = x;
+
+			}
+
+			var input = document.getElementById("text1");
+			input.addEventListener("keyup", function (event) {
+				if (event.keyCode === 13) {
+					event.preventDefault();
+					document.getElementById("button1").click();
+				}
+			});
+
+
+			function intoVoid() {
+				var submittedText = document.getElementById("submitted1");
+				var fadeEffect = setInterval(function () {
+					if (!submittedText.style.opacity) {
+						submittedText.style.opacity = 1;
+					}
+					if (submittedText.style.opacity > 0) {
+						submittedText.style.opacity -= 0.1;
+					}
+					else {
+						clearInterval(fadeEffect);
+					}
+				}, 130);
+
+				document.getElementById("text1").value = "";
+				setTimeout(function () {
+					window.location = window.location;
+				}, 1600);
+			}
+
+		</script>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script>
+			$("#heart-trigger").click(function () {
+				$("li").toggleClass("visible");
+			});
+		</script>
+
+		<!-- initiate aos -->
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		<script>
+			AOS.init({ once: true, duration: "600" });
+		</script>
+
+</body>
+
+</html>

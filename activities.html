@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Activities | Safe Mindspace</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="animate.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    p,
+    a {
+      font-family: "Raleway", sans-serif
+    }
+
+    div.auto {
+      -webkit-hyphens: manual;
+      -ms-hyphens: manual;
+      hyphens: manual;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <nav role='navigation'>
+      <ul>
+        <li><a class="navbar" href="index.html">Home</a></li>
+        <li><a class="navbar" href="info.html">Information</a></li>
+        <li id="heart-trigger" class="heart heart-trigger"><span class="fa fa-heart"></span></li>
+        <li><a class="navbar" href="activities.html">Activities</a></li>
+        <li><a class="navbar" href="tools.html">Toolbox</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Tagline -->
+  <div class="hv-white hv-container hv-center" style="padding:180px 50px">
+    <h1 class="hv-xxxlarge" data-aos="fade-in" style="margin:auto" data-aos-delay="50"><b>Activities</b></h1>
+    <p class="hv-xlarge" data-aos="fade-in" data-aos-delay="200">Have fun and calm yourself with these 16 mindful
+      activities below, or <a class="green-link" onclick="activity_random()" style="cursor:pointer;">click here</a> to
+      generate a random activity!</p>
+    <p class="hv-xlarge hv-text-dark-green" id="random"></p>
+  </div>
+
+  <!-- Row 1 -->
+  <div class="hv-row-padding hv-padding-top-64 hv-container hv-light-purple">
+    <div class="hv-content" style="padding-left: 25px;padding-right: 25px;">
+
+      <div class="hv-quarter hv-padding-48" style="padding-left: 50px;padding-right: 50px;text-align:center">
+        <h3 class="hv-text-dark-green" data-aos="fade-in" data-aos-delay="50"><b>Go for a walk</b></h3>
+        <p class="hv-text-black" data-aos="fade-in" data-aos-delay="100">Take a walk outdoors and admire nature, or walk
+          around your house (or on a treadmill, if you have one). Walking is a great low-intensive way to stay active,
+          especially with more people staying indoors.</p>
+        <img src="country.svg" data-aos="fade-in" data-aos-delay="200"
+          style="width:80%;vertical-align:middle;padding-top:40px" alt="Person walking outside">
+      </div>
+
+      <div class="hv-quarter hv-padding-48" style="padding-left: 50px;padding-right: 50px;text-align:center">
+        <h3 class="hv-text-dark-green" data-aos="fade-in" data-aos-delay="50"><b>Listen to music</b></h3>
+        <p class="hv-text-black" data-aos="fade-in" data-aos-delay="100">Listen to your favorite music artists or find a
+          calming music playlist on Youtube, Spotify, Pandora, or whatever music platform you enjoy using. Take a look
+          for some inspiration <a class="green-link" target="_blank"
+            href="https://www.youtube.com/watch?v=3jWRrafhO7M">here</a>, <a class="green-link" target="_blank"
+            href="https://www.youtube.com/watch?v=lFcSrYw-ARY">here</a>, and <a class="green-link" target="_blank"
+            href="https://www.youtube.com/watch?v=-FlxM_0S2lA">here</a>.</p>
+        <img src="music.svg" data-aos="fade-in" data-aos-delay="200"
+          style="width:80%;vertical-align:middle;padding-top:40px" alt="Person listening to music">
+      </div>
+
+      <div class="hv-quarter hv-padding-48" style="padding-left: 50px;padding-right: 50px;text-align:center">
+        <h3 class="hv-text-dark-green" data-aos="fade-in" data-aos-delay="50"><b>Read a book</b></h3>
+        <p class="hv-text-black" data-aos="fade-in" data-aos-delay="100">It's always a great time to pick up a new book,
+          and there are thousands of great books out there, from sci-fi to fantasy to historical fiction to
+          autobiography - the list goes on. Have a glance at <a class="green-link" target="_blank"
+            href="https://medium.com/world-literature/creating-the-ultimate-list-100-books-to-read-before-you-die-45f1b722b2e5">our
+            favorites</a>!</p>
+        <img src="read.svg" data-aos="fade-in" data-aos-delay="200"
+          style="width:70%;vertical-align:middle;padding-top:40px" alt="Person reading a book">
+      </div>
+
+      <div class="hv-quarter hv-padding-48" style="padding-left: 50px;padding-right: 50px;text-align:center">
+        <h3 class="hv-text-dark-green" data-aos="fade-in" data-aos-delay="50"><b>Play a video game</b></h3>
+        <p class="hv-text-black" data-aos="fade-in" data-aos-delay="100">There are video games catering to all kinds of
+          people, whether you enjoy FPS games, RPGs, sandbox games, or something else! For bonus points, play with a few
+          friends (or against them).</p>
+        <img src="vr.svg" data-aos="fade-in" data-aos-delay="200"
+          style="width:100%;vertical-align:middle;padding-top:40px" alt="Person with a VR headset on">
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Row 2 -->
+  <div class="hv-row-padding hv-padding-top-64 hv-container hv-light-green">
+    <div class="hv-content" style="padding-left: 25px;padding-right: 25px;">
+
+      <div class="hv-quarter hv-padding-48" style="padding-left: 50px;padding-right: 50px;text-align:center">
+        <h3 class="hv-text-purple" data-aos="fade-in" data-aos-delay="50"><b>Talk with friends</b></h3>
+        <p class="hv-text-black" data-aos="fade-in" data-aos-delay="100">Chat with your friends about school, your
+          favorite interests, or help each other with homework! Some great messaging and voice platforms for
+          long-distance conversations include <a class="purple-link" target="_blank" href="https://zoom.us/">Zoom</a>,
+          <a class="purple-link" target="_blank" href="https://discord.com/">Discord</a>, <a class="purple-link"
+            target="_blank" href="https://meet.google.com/">Google Meet</a>, and more!
+        </p>
+        <img src="talking.svg" data-aos="fade-in" data-aos-delay="200"
+          style="width:80%;vertical-align:middle;padding-top:40px" alt="Two people talking to each other">
+      </div>
+
+      <div class="hv-quarter hv-padding-48" style="padding-left: 50px;padding-right: 50px;text-align:center">
+        <h3 class="hv-text-dark-purple" data-aos="fade-in" data-aos-delay="50"><b>Eat your favorite food</b></h3>
+        <p class="hv-text-black" data-aos="fade-in" data-aos-delay="100">Treat yourself. Even if you're on a diet or
+          strict healthy eating program, it's okay to eat some comfort food once in a while. You can also reward
+          yourself with your favorite food after finishing a project or test.</p>
+        <img src="cola.svg" data-aos="fade-in" data-aos-delay="200"
+          style="width:85%;vertical-align:middle;padding-top:40px" alt="People drinking soda">
+      </div>
+
+      <div class="hv-quarter hv-padding-48" style="padding-left: 50px;padding-right: 50px;text-align:center">
+        <h3 class="hv-text-dark-purple" data-aos="fade-in" data-aos-delay="50"><b>Meditate</b></h3>
+        <p class="hv-text-black" data-aos="fade-in" data-aos-delay="100">Sit on the floor or the couch and close your
+          eyes, focusing on your breathing and heartbeat. We even have a <a class="purple-link"
+            href="meditate.html">meditation tool</a> to help you regulate your breathing, along with some nice music to
+          set the mood.</p>
+        <img src="calm.svg" data-aos="fade-in" data-aos-delay="200"
+          style="width:80%;vertical-align:middle;padding-top:40px" alt="Person meditating">
+      </div>
+
+      <div class="hv-quarter hv-padding-48" style="padding-left: 50px;padding-right: 50px;text-align:center">
+        <h3 class="hv-text-dark-purple" data-aos="fade-in" data-aos-delay="50"><b>Spend time with family</b></h3>
+        <p class="hv-text-black" data-aos="fade-in" data-aos-delay="100">Now that we're spending more time at home than
+          ever, make sure to set aside some quality family time to talk and relax. If you live alone, make sure to give
+          them a call at least every week to catch up and chat.</p>
+        <img src="family.svg" data-aos="fade-in" data-aos-delay="200"
+          style="width:85%;vertical-align:middle;padding-top:40px" alt="Two family members chatting">
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Row 3 -->
+  <div class="hv-row-padding hv-padding-top-64 hv-container hv-light-purple">
+    <div class="hv-content" style="padding-left: 25px;padding-right: 25px;">
+
+      <div class="hv-quarter hv-padding-48" style="padding-left: 50px;padding-right: 50px;text-align:center">
+        <h3 class="hv-text-dark-green" data-aos="fade-in" data-aos-delay="50"><b>Vent your feelings</b></h3>
+        <p class="hv-text-black" data-aos="fade-in" data-aos-delay="100">Find someone - trusted friend, family member,
+          teacher, counselor, you name it - and talk about your frustrations. Getting it all out will make you feel
+          better. You can also use our <a class="green-link" href="vent.html">venting tool</a> and type your anger out.
+        </p>
+        <img src="vent.svg" data-aos="fade-in" data-aos-delay="200"
+          style="width:90%;vertical-align:middle;padding-top:40px" alt="Two people talking to each other">
+      </div>
+
+      <div class="hv-quarter hv-padding-48" style="padding-left: 50px;padding-right: 50px;text-align:center">
+        <h3 class="hv-text-dark-green" data-aos="fade-in" data-aos-delay="50"><b>Sing or dance</b></h3>
+        <p class="hv-text-black" data-aos="fade-in" data-aos-delay="100">Fire up the music and sing or dance (or do
+          both) to your favorite song, or just sing/dance without a backing track. If you play a musical instrument, you
+          can even play the chords while singing.</p>
+        <img src="dance.svg" data-aos="fade-in" data-aos-delay="200"
+          style="width:80%;vertical-align:middle;padding-top:40px" alt="Person dancing">
+      </div>
+
+      <div class="hv-quarter hv-padding-48" style="padding-left: 50px;padding-right: 50px;text-align:center">
+        <h3 class="hv-text-dark-green" data-aos="fade-in" data-aos-delay="50"><b>Do some yoga</b></h3>
+        <p class="hv-text-black" data-aos="fade-in" data-aos-delay="100">Yoga is a great way to improve your flexibility
+          and calm down after - or before - a stressful day. Here are some amazing videos for beginners (<a
+            class="green-link" target="_blank" href="https://www.youtube.com/watch?v=tXWh-dowiLg&t">here</a>, <a
+            class="green-link" target="_blank" href="https://www.youtube.com/watch?v=a3VTQyNZ0Bo&t">here</a> and <a
+            class="green-link" target="_blank" href="https://www.youtube.com/watch?v=4pKly2JojMw">here</a>) to get you
+          started.</p>
+        <img src="yogaball.svg" data-aos="fade-in" data-aos-delay="200"
+          style="width:90%;vertical-align:middle;padding-top:40px" alt="Person doing yoga">
+      </div>
+
+      <div class="hv-quarter hv-padding-48" style="padding-left: 50px;padding-right: 50px;text-align:center">
+        <h3 class="hv-text-dark-green" data-aos="fade-in" data-aos-delay="50"><b>Get 8+ hours of sleep</b></h3>
+        <p class="hv-text-black" data-aos="fade-in" data-aos-delay="100">Pulled an all-nighter to finish your homework
+          or study for a big exam? We've been there too. However, it's really important to get enough sleep so you feel
+          energized the next day - but if you can't, there's always caffeine.</p>
+        <img src="sleep.svg" data-aos="fade-in" data-aos-delay="200"
+          style="width:80%;vertical-align:middle;padding-top:40px" alt="Person sleeping">
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Row 4 -->
+  <div class="hv-row-padding hv-padding-64 hv-container hv-light-green">
+    <div class="hv-content" style="padding-left: 25px;padding-right: 25px;">
+
+      <div class="hv-quarter hv-padding-48" style="padding-left: 50px;padding-right: 50px;text-align:center">
+        <h3 class="hv-text-purple" data-aos="fade-in" data-aos-delay="50"><b>Go shopping</b></h3>
+        <p class="hv-text-black" data-aos="fade-in" data-aos-delay="100">Social distancing is still important, so we
+          recommend shopping online at <a class="purple-link" target="_blank" href="https://amazon.com">Amazon</a> or
+          your favorite retailer. If you don't have money to burn, you could always try window shopping, which is still
+          very therapeutic.</p>
+        <img src="shop.svg" data-aos="fade-in" data-aos-delay="200"
+          style="width:90%;vertical-align:middle;padding-top:40px" alt="Person going shopping">
+      </div>
+
+      <div class="hv-quarter hv-padding-48" style="padding-left: 50px;padding-right: 50px;text-align:center">
+        <h3 class="hv-text-dark-purple" data-aos="fade-in" data-aos-delay="50"><b>Draw or paint</b></h3>
+        <p class="hv-text-black" data-aos="fade-in" data-aos-delay="100">Are you art-inclined? Do what you're passionate
+          about and create a masterpiece - or, if you're not very artsy, now's a great time to learn the basics! You
+          could even create digital art using Adobe Illustrator or other software.</p>
+        <img src="draw.svg" data-aos="fade-in" data-aos-delay="200"
+          style="width:75%;vertical-align:middle;padding-top:40px" alt="Person painting">
+      </div>
+
+      <div class="hv-quarter hv-padding-48" style="padding-left: 50px;padding-right: 50px;text-align:center">
+        <h3 class="hv-text-dark-purple" data-aos="fade-in" data-aos-delay="50"><b>Write a story</b></h3>
+        <p class="hv-text-black" data-aos="fade-in" data-aos-delay="100">Write a fantasical fiction novel, a chilling
+          horror story, or your own autobiography! Sit in front of your computer (or get a piece of paper) and create a
+          whole world using only your imagination.</p>
+        <img src="type.svg" data-aos="fade-in" data-aos-delay="200"
+          style="width:85%;vertical-align:middle;padding-top:40px" alt="Person with typewriter">
+      </div>
+
+      <div class="hv-quarter hv-padding-48" style="padding-left: 50px;padding-right: 50px;text-align:center">
+        <h3 class="hv-text-dark-purple" data-aos="fade-in" data-aos-delay="50"><b>Make a to-do list</b></h3>
+        <p class="hv-text-black" data-aos="fade-in" data-aos-delay="100">Keep all your tasks in order with a to-do list.
+          You can buy a planner or notebook, or use our <a class="purple-link" href="todo.html">priority list tool</a>
+          to get all of your activities in one place, and check each one off when you've finished.</p>
+        <img src="todo.svg" data-aos="fade-in" data-aos-delay="200"
+          style="width:85%;vertical-align:middle;padding-top:40px" alt="Person with to-do list">
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- initiate aos -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({ once: true, duration: "600" });
+  </script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    $("#heart-trigger").click(function () {
+      $("li").toggleClass("visible");
+    });
+  </script>
+
+  <script>
+    var activities = Array("Go for a walk!", "Listen to music!", "Read a book!", "Play a video game!", "Talk with friends!", "Eat your favorite food!", "Meditate!", "Spend time with family!", "Vent your feelings!", "Sing or dance!", "Do some yoga!", "Get 8+ hours of sleep!", "Go shopping!", "Draw or paint!", "Write a story!", "Make a to-do list!");
+
+    function activity_random() {
+      var pick = activities[Math.floor(Math.random() * activities.length)];
+      document.getElementById("random").innerHTML = pick;
+    }
+  </script>
+
+
+</body>
+
+</html>

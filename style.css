@@ -1,0 +1,99 @@
+form{
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+form input, form button{
+    padding: 1.8rem;
+    font-size: 1.5rem;
+    font-family: "Raleway";
+    color: #4947bd;
+    border: none;
+    background: whitesmoke;
+}
+
+form button{
+    color:#9f9ec8;
+    background:whitesmoke ;
+    border-color: cornflowerblue;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.container {
+    min-height: 500px;
+    min-width: 250px;
+    background-color: #9f9ec8;;
+    background-size: 25px 25px;
+    justify-content: center;
+    padding: 1rem;
+    box-sizing: border-box;
+    align-items: center;
+    
+  }
+
+form button:hover{
+    background:whitesmoke;
+    color: #9f9ec8;
+}
+
+.todo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-list{
+    min-width: 25%;
+    list-style: none;
+}
+
+.todo{
+    margin: 0.5rem;
+    background: whitesmoke;
+    color: #504ec2;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.5s ease;
+}
+
+.todo li {
+    flex: 1;
+}
+
+.trash-btn, .complete-btn{
+    background: rgb(135, 168, 230);
+    color: white;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.complete-btn{
+    background: rgb(158, 235, 139);
+}
+
+.todo-item {
+    padding: 0 0.5rem;
+}
+
+.fa-trash, .fa-check{
+    pointer-events: none;
+}
+.completed{
+    text-decoration: line-through;
+    text-decoration-style: wavy;
+    text-decoration-color: rgb(240, 65, 109);
+    opacity: 0.5;
+}
+
+.fall{
+    transform: translateY(8rem) rotateZ(20deg);
+    opacity: 0;
+}

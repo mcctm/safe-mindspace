@@ -1,0 +1,63 @@
+
+.venting{
+    background: #d8f2ea;
+    color: #9f9ec8;
+    font-family: "Raleway", sans-serif;
+    min-height: 100vh;
+    padding: 1.5rem;
+}
+
+.container {
+	min-height: 500px;
+    min-width: 250px;
+    background-color: #9f9ec8;;
+    background-size: 25px 25px;
+    border-radius: 20px;
+    padding: 1.5rem;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.textbox {
+    background-color: #efeff6;
+    color: #504ec2;
+    border: none;
+    padding: 1.8rem;
+    display: flex;
+    box-sizing: border-box;
+    min-height: 100%;
+    min-width: 100%;
+    height: 35vh;
+    outline: #efeff6;
+    overflow: auto;
+    resize: none;
+    font-size: 1.2rem;
+    font-family: Raleway;
+}
+
+.accept-btn, .trash2-btn {
+	background: #d8f2ea;
+    color: #6d6cac;
+    border: none;
+    border-radius: 10px;
+    padding: 1rem;
+    display: flex;
+    cursor: pointer;
+    text-align: center;
+    font-size: 1rem;
+    outline: currentColor;
+    font-family: Raleway;
+	font-weight:500;
+}
+
+.accept-btn:hover, .trash-btn:hover {
+	background-color: #b3e6d6;
+}
+
+.submitted-text {
+	font-size: 1.3rem;
+	font-family: Raleway;
+	color: whitesmoke;
+	padding: 15px 1.8rem 10px 1.8rem;
+}
+

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Meditate | Safe Mindspace</title>
+<meta charset="UTF-8">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="main.css">
+<link rel="stylesheet" href="animate.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<header>
+  <nav role='navigation'>
+    <ul>
+      <li><a class="navbar" href="index.html">Home</a></li>
+      <li><a class="navbar" href="info.html">Information</a></li>
+      <li id="heart-trigger" class="heart heart-trigger"><span class="fa fa-heart"></span></li>
+      <li><a class="navbar" href="activities.html">Activities</a></li>
+      <li><a class="navbar" href="tools.html">Toolbox</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="hv-container hv-padding-450 hv-green hv-center">
+
+ <div class="hv-content">
+ <img data-aos="fade-in" data-aos-delay="50" src="circle.svg" alt="Meditation Circle" style="width:15vw; max-width:170px" class="animate__animated animate__slower animate__infinite animate__pulse">
+ <p data-aos="fade-in" data-aos-delay="200" class="hv-xlarge"><br><br><br>breathe in as it grows<br>breathe out as it shrinks</p>
+ <audio data-aos="fade-in" style="padding-top:30px" data-aos-delay="300" controls>
+  <source src="meditation-music.mp3" type="audio/mp3">
+ </audio>
+
+
+ </div>
+</div>
+
+
+
+
+
+
+<!-- initiate aos -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init({once:true, duration:"600"});
+</script>
+
+<!-- Menu stuff -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$("#heart-trigger").click(function () {
+  $("li").toggleClass("visible");
+});
+</script>
+
+
+</body>
+</html>
+
