@@ -1,4 +1,4 @@
-# safemindspace
+# Safe Mindspace
 
 A one-stop shop for your mental health and relaxation
 
