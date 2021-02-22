@@ -1,6 +1,6 @@
 # Safe Mindspace
 
-A one-stop shop for your mental health and relaxation
+A one-stop shop for your mental health and relaxation - https://safemind.space/
 
 What is Safe Mindspace?
 
