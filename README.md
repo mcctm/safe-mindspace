@@ -1,5 +1,6 @@
 # Safe Mindspace
 
+Created by: Miranda Chan, Ashley Yuan, and Emma Huang
 A one-stop shop for your mental health and relaxation - https://safemind.space/
 
 What is Safe Mindspace?
